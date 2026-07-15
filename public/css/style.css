@@ -1,0 +1,56 @@
+body{
+  font-family: "Poppins", sans-serif;
+  margin:0;
+  padding:0;
+  background-color: rgb(236, 237, 237);
+}
+.cointainer{
+  height:90vh;
+  width:90vw;
+  align-items: center;
+  display:flex;
+  margin:0 auto;
+  background-color: white;
+  margin-top:3rem;
+  border-radius:0.8rem;
+}
+.login-image{
+  height:80vh;
+  width:50vw;
+  margin-bottom:2.5rem;
+}
+.login-image img{
+  height:80vh;
+  width:40vw;
+  margin:2.5rem;
+}
+.login-val{
+  height:70vh;
+  width:50vw;
+}
+.login-val input{
+  width:25rem;
+  background-color: rgb(78, 87, 87);
+  border-radius:0.5rem;
+  font-size: 1.2rem;
+  padding:0.8rem;
+  margin-top:3rem;
+}
+.login-val input::placeholder {
+  font-size: 1.2rem;
+}
+.login-val button{
+  width:26.3rem;
+  background-color: orange;
+  border-radius:0.5rem;
+  padding:0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top:3.5rem;
+}
+.login-val a{
+   text-decoration: none;
+   color: rgb(78, 87, 87);
+   font-size:1.2rem;
+   margin-left:16rem;
+}
