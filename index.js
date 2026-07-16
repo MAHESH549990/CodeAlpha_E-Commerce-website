@@ -19,5 +19,11 @@ app.get("/",(req,res)=>{
 
 
 app.get("/login",(req,res)=>{
-  res.render("login");
+  res.render("login.ejs");
 })
+app.get("/register",(req,res)=>{
+  res.render("register.ejs");
+});
+app.get("/updatepassword",(req,res)=>{
+  res.render("newpassword.ejs");
+});
