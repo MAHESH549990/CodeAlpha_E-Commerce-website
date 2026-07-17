@@ -1,12 +1,16 @@
 body{
   font-family: "Poppins", sans-serif;
   margin:0;
-  background-color: rgb(232, 245, 232) !important;
+  background-color: rgb(195, 130, 65) !important;
 }
 .heading{
   font-size: 3.5rem;
   font-weight: bold;
 }
+.container{
+  flex:1;
+}
+
 .para{
   font-size:1rem;
   color:rgb(237, 122, 7);
@@ -36,4 +40,106 @@ body{
   background-color: rgb(232, 245, 232) !important;
   padding:0.5rem;
   border-radius:0.3rem;
+}
+/* navbar */
+.navbar{
+  height:4.5rem;
+  background-color: white;
+  border-bottom:0.1rem solid black;
+}
+.navbar-nav a{
+  font-size: 1.3rem;
+  margin-left:1.2rem;
+}
+.navbar-brand i{
+  font-size: 2.2rem;
+}
+.navbar-brand span{
+  font-size: 1.3rem;
+}
+.navbar-toggler{
+  background-color: white;
+}
+
+/* footer */
+.f-info-links a{
+  text-decoration:none;
+  color:#222222;
+}
+.f-info-socials a{
+  color:#222222 !important;
+}
+.f-info-links a:hover{
+  text-decoration:underline;
+}
+.f-info-socials i{
+  font-size:1.2rem;
+  margin-right:1rem;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand{
+  justify-content: center;
+  align-items:center;
+
+  width:100%;
+}
+.f-info{
+  display:flex;
+  background-color:#ebebeb;
+  height:7rem;
+  flex-wrap:wrap;
+  justify-content:center;
+  text-align:center;
+  padding:0.5rem;
+}
+
+
+/*cards*/
+.card{
+  border:none !important;
+  margin-bottom:2.2rem;
+  text-decoration: none !important;
+}
+.card-img-top{
+  border-radius: 1rem !important;
+  width:100% !important;
+  object-fit: cover !important;
+}
+.card-body{
+  padding:0 !important;
+}
+.card-text p{
+  font-weight:00;
+}
+.item-link{
+  text-decoration: none;
+}
+.card-img-overlay{
+  opacity: 0;
+}
+.card-img-overlay:hover{
+  opacity:0.2;
+  background-color: white;
+}
+
+
+
+.add-btn,.delete-btn,.edit-btn{
+  background-color: #fe424d !important;
+  border:none !important;
+  padding:0.3rem !important;
+  margin-top:1rem !important;
+  border-radius:0.3rem !important;
+}
+.edit-btn,.delete-btn{
+  text-decoration: none !important;
+  color:black !important;
+}
+.btns{
+  display: flex;
+}
+.butns button:hover{
+  background-color: green !important;
+  color:white !important;
 }

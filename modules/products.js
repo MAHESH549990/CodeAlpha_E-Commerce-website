@@ -27,4 +27,12 @@ const productsSchema=Schema({
     min:1,
     max:5,
   },
+  description:{
+    type:String,
+    required:true,
+  },
 });
+
+const Product=mongoose.model("Product",productsSchema);
+
+module.exports=Product;

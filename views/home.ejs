@@ -1,0 +1,16 @@
+<%layout("/layouts/boilerplate")%>
+<body>
+  <div class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3" style="margin-top:2rem !important;">
+  <%for(let product of allProducts){%>
+  <a href="/home/<%=product._id%>" class="item-link">
+  <div class="container-fluid card ms-4 p-4">
+  <img src="<%=product.image.url%>" class="card-img-top" alt="Product_images" style="height:15rem;">
+  <div class="card-img-overlay"></div>
+  <div class="card-body">
+    <p class="card-text"><b><%=product.name%></b><br/>&#8377; <%=product.price.toLocaleString("en-IN") %></p>
+  </div>
+  </div>
+  </a>
+   <%}%>
+</div>
+</body>
