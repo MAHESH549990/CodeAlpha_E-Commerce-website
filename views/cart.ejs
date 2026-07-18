@@ -1,0 +1,32 @@
+<%-layout("/layouts/boilerplate")%>
+<body>
+  <div class="container-fluid">
+    <div class="h1 mt-5 bg-white rounded-3 p-3">
+    <p>Total Item: <%=allItems.length%></p>
+    <p>Total Price: <%=price%></p>
+    <button class="btn btn-success">Place all orders</button>
+  </div>
+    <%for(let item of allItems){%>
+    <div class="bg-white p-3 mb-3 rounded-3" style="display:flex; flex-wrap: wrap;">
+      <div class="card-body">
+        <img src="<%=item.image.url%>" class="rounded-4 w-50" style="padding:0.5rem;"></div>
+    <div class="card-body mt-2">
+    <p class="card-text h3"><b><%=item.name%></b><br/>&#8377; <%=item.price.toLocaleString("en-IN") %></p>
+    <p class="card-text h5">
+      <%=item.description%>
+    </p>
+    <div class="h3">
+     <% for(let i = 1; i <= item.rating; i++) { %>
+      <i class="fa-solid fa-star text-warning"></i>
+     <% } %>
+     <span><%= item.rating %>/5</span>
+    </div>
+    <div class="h1">
+    <button type="button" class="btn btn-success">Place Order</button>
+    <button type="button" class="btn btn-warning">Delete</button>
+    </div>
+  </div>
+  </div>
+  <% } %>
+  </div>
+</body>

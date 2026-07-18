@@ -1,13 +1,17 @@
 <%layout("/layouts/boilerplate")%>
 <body>
-  <div class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3" style="margin-top:2rem !important;">
+  <div class="row row-cols-lg-4 row-cols-md-4 row-cols-sm-2" style="margin-top:2rem !important;">
   <%for(let product of allProducts){%>
   <a href="/home/<%=product._id%>" class="item-link">
   <div class="container-fluid card ms-4 p-4">
-  <img src="<%=product.image.url%>" class="card-img-top" alt="Product_images" style="height:15rem;">
+  <img src="<%=product.image.url%>" class="card-img-top w-100" alt="Product_images" style="height: 20rem;background-size: cover !important;">
   <div class="card-img-overlay"></div>
   <div class="card-body">
     <p class="card-text"><b><%=product.name%></b><br/>&#8377; <%=product.price.toLocaleString("en-IN") %></p>
+    <% for(let i = 1; i <= product.rating; i++) { %>
+      <i class="fa-solid fa-star text-warning"></i>
+     <% } %>
+     <span><%= product.rating %>/5</span>
   </div>
   </div>
   </a>

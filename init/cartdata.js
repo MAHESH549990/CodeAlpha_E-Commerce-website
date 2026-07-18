@@ -13,3 +13,10 @@ main()
 async function main(){
   await mongoose.connect(MONGO_URL);
 }
+
+const initDB=async ()=>{
+  await Cart.deleteMany({});
+  console.log("Data was initialized");
+}
+
+initDB();

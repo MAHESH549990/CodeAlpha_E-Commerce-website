@@ -123,7 +123,9 @@ body{
   background-color: white;
 }
 
-
+img{
+  object-fit: cover !important;
+}
 
 .add-btn,.delete-btn,.edit-btn{
   background-color: #fe424d !important;

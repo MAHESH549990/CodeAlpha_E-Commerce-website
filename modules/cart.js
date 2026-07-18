@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 const {Schema}=mongoose;
 
-const cartSchema=({
+const cartSchema=Schema({
   name:{
     type:String,
     required:true,
